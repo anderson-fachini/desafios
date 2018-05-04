@@ -8,6 +8,7 @@
 	* [Informações](#informações)
 	* [Problema 0 (Exemplo)](#problema-0-exemplo)
 	* [Problema 1](#problema-1)
+	* [Problema 2](#problema-2)
 
 <!-- /code_chunk_output -->
 
@@ -75,3 +76,41 @@ Saída esperada (out.txt):
 
 Adaptação de [Project Euler #1](https://projecteuler.net/problem=1)
 
+## Problema 2
+
+Produzir a [sequência de Fibonacci](https://pt.wikipedia.org/wiki/Sequência_de_Fibonacci), na forma de uma lista separada por vírgula. Exemplo:
+```
+0, 1, 1, 2, 3, 5, ...
+```
+
+**Nome da classe:** `P002.java`
+
+**Entrada:**
+Cada linha representa o número de elementos a ser produzido na lista. Exemplo:
+```
+1
+2
+3
+4
+5
+```
+
+**Saída:**
+Com base no exemplo de entrada, a saída esperada é:
+```
+0
+0, 1
+0, 1, 1
+0, 1, 1, 2
+0, 1, 1, 2, 3
+```
+
+<details>
+  <summary><b>Dicas:<b></summary>
+   <ul>
+        <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#iterate-T-java.util.function.UnaryOperator-" style="font-family: monospace">Stream.iterate</a></li>
+        <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html#joining-java.lang.CharSequence-" style="font-family: monospace">Collectors.joining</a></li>
+   <ul>
+</details>
+
+Inspirado em [Project Euler #2](https://projecteuler.net/problem=2)
