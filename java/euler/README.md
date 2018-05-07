@@ -44,7 +44,7 @@ O método `solve` recebe como argumento `List<String>` que é o conteudo do arqu
 O resultado do método `solve` será comparado ao conteúdo do arquivo `out.txt` do teste sendo executado.
 
 ## Problema 0 (Exemplo)
-Na classe [euler.problems.p000.P000.java](src/main/java/euler/problems/p000/P000.java) implemente o método `solve` para que o mesmo faça o somatório dos números recebidos como argumento.
+Na classe [euler.problems.p000.P000](src/main/java/euler/problems/base/p000/P000.java) implemente o método `solve` para que o mesmo faça o somatório dos números recebidos como argumento.
 
 Exemplo de entrada (in.txt):
 ```
