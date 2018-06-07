@@ -8,7 +8,8 @@
 * [Desafios](#desafios)
 	* [Informações](#informações)
 	* [Problema 0](#problema-0)
-	* [Problema 1](#problema-1)
+	* [Problema 1](#problema-1) 
+	* [Problema 2](#problema-2)
 
 
 <!-- /code_chunk_output -->
@@ -54,3 +55,13 @@ Crie um arquivo .ts com um método de somar. Esta função recebe 2 parâmetros 
 
 Resultado: 
 Confira o resultado esperado em 'p001\p001.solved.jpg'
+
+## Problema 2
+
+A possibilidade de inferência de tipos e garantia do compilador/editor que estamos utilizando a tipagem correta garante que iremos ter um código melhor organizado e de mais fácil manutenção.
+
+Desafio:
+Crie um arquivo que contenha uma variável do tipo: string, number, boolean,  array de string, array de integer e um enumerador. Em seguida, exiba os dados na tela.
+
+Resultado: 
+Confira o resultado esperado em 'p002\p002.solved.jpg'
