@@ -11,6 +11,7 @@
 	* [Problema 2](#problema-2)
     * [Problema 3](#problema-3)
     * [Problema 4](#problema-4)
+    * [Problema 5](#problema-5)
 
 <!-- /code_chunk_output -->
 
@@ -155,4 +156,20 @@ Quantida de dinheiro que será sacado.
 O retorno deve estar no formato QUANTIDADE_UNIDADE=VALOR_UNIDADE e o valor da unidade com um zero à direita e dois à esquerda quando necessário.
 ```
 1=20.00,1=2.00,1=1.00,1=0.50,1=0.05,1=0.01
+```
+
+## Problema 5
+
+A empresa XPTO Finances vai lançar uma moderna máquina de preenchimento de cheques e precisa de um algorítmo para obter o valor do cheque por extenso. Como ela atende apenas o Brasil não é necessário fazer qualquer tratamento adicional para outras moedas.
+
+**Entrada**
+Valor a ser gerado por extenso.
+```
+1234,56
+```
+
+**Saída**
+Valor em string por extenso.
+```
+um mil duzentos e trinta e quatro reais e cinquenta e seis centavos
 ```
