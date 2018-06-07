@@ -7,7 +7,8 @@
 
 * [Desafios](#desafios)
 	* [Informações](#informações)
-	* [Problema 0](#problema-0-exemplo)
+	* [Problema 0](#problema-0)
+	* [Problema 1](#problema-1)
 
 
 <!-- /code_chunk_output -->
