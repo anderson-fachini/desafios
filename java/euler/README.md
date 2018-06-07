@@ -171,5 +171,5 @@ Valor a ser gerado por extenso.
 **Saída**
 Valor em string por extenso.
 ```
-um mil duzentos e trinta e quatro reais e cinquenta e seis centavos
+um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos
 ```
