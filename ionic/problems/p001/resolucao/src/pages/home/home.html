@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mobile - Ionic - P001
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Current Platforms
+  <ion-grid>
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>Description</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let plt of allPlatforms" [ngClass]="currentPlatforms.indexOf(plt.name) > -1 ? 'platform-true' : 'platform-false'">
+      <ion-col>{{plt.name}}</ion-col>
+      <ion-col>{{plt.description}}</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<style>
+  .platform-true {
+    color: #4f8a10;
+    border: 1px solid #ddd;
+  }
+
+  .platform-false {
+    color: #d8000c;
+  }
+</style>
