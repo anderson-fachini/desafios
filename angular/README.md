@@ -10,7 +10,7 @@
 	* [Problema 0](#problema-0)
 	* [Problema 1](#problema-1) 
 	* [Problema 2](#problema-2)
-
+    * [Problema 3](#problema-3)
 
 <!-- /code_chunk_output -->
 
@@ -65,3 +65,13 @@ Crie um arquivo que contenha uma variável do tipo: string, number, boolean,  ar
 
 Resultado: 
 Confira o resultado esperado em 'p002\p002.solved.jpg'
+
+## Problema 3
+
+A inferência de tipos provê um código mais seguro, organizado e funcional para o programador. Alinhado a isso, a possibilidade de criar [classes no Typescript](https://www.typescriptlang.org/docs/handbook/classes.html, "classes no Typescript") facilita o reuso, bem como a estruturação do código.
+
+Desafio: Crie uma classe para representar um carro. Represente na classe os seguintes atributos: qtde rodas, qtde portas, marca, modelo, potência do motor, cor, hatch ou sedan (utilize enumerador).
+
+Resultado: Não haverá print do resultado.
+
+
