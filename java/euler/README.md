@@ -180,13 +180,14 @@ um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos
 Dada uma matriz `M`, encontre o maior produto selecionando `n` elementos adjacentes na mesma direção (cima, baixo, direita, esquerda, diagonais).
 
 Formato da entrada:
-```
+```java
 n
 M
 ```
 
 **Exemplo 1**
-```
+```java
+//Entrada
 4
 1 1 1 1 0
 0 0 0 0 0
@@ -194,60 +195,74 @@ M
 0 0 0 0 0
 0 0 0 0 0
 ```
-```
+```java
+//Saída
 1
 ```
 
 **Exemplo 2**
-```
+```java
 4
-1 0 0 0 0
-1 0 0 0 0
-1 0 0 0 0
-1 0 0 0 0
+2 0 0 0 0
+2 0 0 0 0
+2 0 0 0 0
+2 0 0 0 0
 0 0 0 0 0
 ```
-```
-1
+```java
+16
 ```
 
 **Exemplo: 3**
-```
+```java
 4
-1 0 0 0 0
-0 1 0 0 0
-0 0 1 0 0
-0 0 0 1 0
+3 0 0 0 0
+0 3 0 0 0
+0 0 3 0 0
+0 0 0 3 0
 0 0 0 0 0
 ```
-```
-1
+```java
+81
 ```
 
 **Exemplo: 4**
-```
+```java
 4
-0 0 0 1 0
-0 0 1 0 0
-0 1 0 0 0
-1 0 0 0 0
+0 0 0 4 0
+0 0 4 0 0
+0 4 0 0 0
+4 0 0 0 0
 0 0 0 0 0
 ```
-```
-1
+```java
+256
 ```
 
 **Exemplo: 5**
-```
+```java
 4
 0 0 0 0 0
-0 1 1 0 0
-0 0 0 1 1
+0 5 5 0 0 // Não forma uma diagonal com 4 elementos
+0 0 0 5 5
 0 0 0 0 0
 0 0 0 0 0
 ```
-```
+```java
 0
+```
+
+**Exemplo: 6**
+```java
+5
+0 2 3 4 6
+0 5 5 6 0
+0 4 6 5 5
+0 6 2 1 0
+6 5 0 4 0
+```
+```java
+7776
 ```
 
 Adaptação de [Project Euler #11](https://projecteuler.net/problem=11)
