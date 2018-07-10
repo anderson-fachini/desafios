@@ -9,9 +9,10 @@
 	* [Problema 0 (Exemplo)](#problema-0-exemplo)
 	* [Problema 1](#problema-1)
 	* [Problema 2](#problema-2)
-    * [Problema 3](#problema-3)
-    * [Problema 4](#problema-4)
-    * [Problema 5](#problema-5)
+	* [Problema 3](#problema-3)
+	* [Problema 4](#problema-4)
+	* [Problema 5](#problema-5)
+	* [Problema 6](#problema-6)
 
 <!-- /code_chunk_output -->
 
@@ -118,19 +119,19 @@ Com base no exemplo de entrada, a saída esperada é:
 
 Inspirado em [Project Euler #2](https://projecteuler.net/problem=2)
 
-## Problema 3  
+## Problema 3
 
-Implementar um replace de String (aka String.replace).    
+Implementar um replace de String (aka String.replace).
 
-**Entrada:**  
-Cada linha terá a String base e a String a ser substituída. Exemplo:  
+**Entrada:**
+Cada linha terá a String base e a String a ser substituída. Exemplo:
 ```
 abcbabacbbakda|a
 nbabbacbacabba|ba
 abcdfeghijklmn|
 ```
 
-**Saída:**  
+**Saída:**
 Com base no exemplo de entrada, a saída esperada é:
 ```
 bcbbcbbkd
@@ -143,16 +144,16 @@ String.charAt
 
 ## Problema 4
 
-Implementar uma máquina para sacar dinheiro (incluindo centavos).  
-O objetivo é otimizar a máquina para retornar a menor quantidade de notas/moedas possíveis de acordo com a sua grandeza. Para facilitar foi disponibilizada a Enum Dinheiro com os valores.  
+Implementar uma máquina para sacar dinheiro (incluindo centavos).
+O objetivo é otimizar a máquina para retornar a menor quantidade de notas/moedas possíveis de acordo com a sua grandeza. Para facilitar foi disponibilizada a Enum Dinheiro com os valores.
 
-**Entrada:**  
+**Entrada:**
 Quantida de dinheiro que será sacado.
 ```
 23.56
 ```
 
-**Saída:**  
+**Saída:**
 O retorno deve estar no formato QUANTIDADE_UNIDADE=VALOR_UNIDADE e o valor da unidade com um zero à direita e dois à esquerda quando necessário.
 ```
 1=20.00,1=2.00,1=1.00,1=0.50,1=0.05,1=0.01
@@ -173,3 +174,95 @@ Valor em string por extenso.
 ```
 um mil e duzentos e trinta e quatro reais e cinquenta e seis centavos
 ```
+
+## Problema 6
+
+Dada uma matriz `M`, encontre o maior produto selecionando `n` elementos adjacentes na mesma direção (cima, baixo, direita, esquerda, diagonais).
+
+Formato da entrada:
+```java
+n
+M
+```
+
+**Exemplo 1**
+```java
+//Entrada
+4
+1 1 1 1 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+```
+```java
+//Saída
+1
+```
+
+**Exemplo 2**
+```java
+4
+2 0 0 0 0
+2 0 0 0 0
+2 0 0 0 0
+2 0 0 0 0
+0 0 0 0 0
+```
+```java
+16
+```
+
+**Exemplo: 3**
+```java
+4
+3 0 0 0 0
+0 3 0 0 0
+0 0 3 0 0
+0 0 0 3 0
+0 0 0 0 0
+```
+```java
+81
+```
+
+**Exemplo: 4**
+```java
+4
+0 0 0 4 0
+0 0 4 0 0
+0 4 0 0 0
+4 0 0 0 0
+0 0 0 0 0
+```
+```java
+256
+```
+
+**Exemplo: 5**
+```java
+4
+0 0 0 0 0
+0 5 5 0 0 // Não forma uma diagonal com 4 elementos
+0 0 0 5 5
+0 0 0 0 0
+0 0 0 0 0
+```
+```java
+0
+```
+
+**Exemplo: 6**
+```java
+5
+0 2 3 4 6
+0 5 5 6 0
+0 4 6 5 5
+0 6 2 1 0
+6 5 0 4 0
+```
+```java
+7776
+```
+
+Adaptação de [Project Euler #11](https://projecteuler.net/problem=11)
